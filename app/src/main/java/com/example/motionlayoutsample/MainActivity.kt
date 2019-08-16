@@ -30,8 +30,8 @@ class MainActivity : AppCompatActivity() {
     private inner class FragmentPagerAdapter : RecyclerView.Adapter<FragmentViewHolder>() {
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FragmentViewHolder {
             val inflater = LayoutInflater.from(parent.context)
-            val view = inflater.inflate(R.layout.fragment_page, parent, false)
-            return (FragmentViewHolder(view))
+            val view = inflater.inflate(R.layout.item_page, parent, false)
+            return FragmentViewHolder(view)
         }
 
         override fun getItemCount(): Int = 4
