@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.motionlayoutsample.collapsible_toolbar.CollapsibleToolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/collapsible_toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="100dp"
+    android:fitsSystemWindows="true"
+    app:layoutDescription="@xml/collapsible_toolbar_transition"
+    app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed">
+    <ImageView
+        android:id="@+id/toolbar_background_collapsible"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:importantForAccessibility="no" />
+
+    <ImageView
+        android:id="@+id/image_collapsible"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_sample_image"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/title_collapsible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title Text"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:id="@+id/subtitle_collapsible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtitle Text"
+        android:textColor="@android:color/white"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_collapsible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Tab 1"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Tab 2"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Tab 3"/>
+        <com.google.android.material.tabs.TabItem
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Tab 4"/>
+    </com.google.android.material.tabs.TabLayout>
+
+</com.example.motionlayoutsample.collapsible_toolbar.CollapsibleToolbar>
